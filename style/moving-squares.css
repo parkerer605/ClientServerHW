@@ -1,0 +1,42 @@
+#squares-container{
+    border:  1px #000000 solid;
+    height: 450px;
+    width: 800px;
+    text-align: center;
+}
+
+#squares-container:hover {
+    transition: 4s;
+    border-radius: 10px;
+    height: 500px;
+}
+
+.even{
+    border: 1px #000000 dashed;
+    width: 50px;
+    height: 50px;
+    margin: 2px auto;
+    background-color: #00f;
+    color: #fff;
+    line-height: 50px;
+}
+
+.odd{
+    border: 1px #000000 dashed;
+    width: 50px;
+    height: 50px;
+    margin: 2px auto;
+    background-color: #61249d;
+    color: #fff;
+    line-height: 50px;
+}
+
+#squares-container:hover .odd{
+    transition: 4s;
+    transform: translateX(+381px) rotate(-1080deg) scale(.75);
+}
+
+#squares-container:hover .even{
+    transition: 4s;
+    transform: translateX(-348px) rotate(1080deg) scale(2);
+}
