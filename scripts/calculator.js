@@ -1,7 +1,7 @@
+var validInput = false;
 function updateDisplay(newValue){
     // find the display box
     var d = document.getElementById('display');
-    var validInput = false;
     switch (newValue){
         case '':
             d.innerHTML = '';
@@ -31,6 +31,11 @@ function updateDisplay(newValue){
            
             break;
         case '=':
+            if(d.innerHTML === '')
+                d.innerHTML = '';
+            else if(!validInput)
+                d.innerHTML = "Err"
+            else if(validInput)
                 d.innerHTML=eval(d.innerHTML);
             break;
     }
