@@ -1,0 +1,36 @@
+#container{
+    display: grid;
+    height: 450px;
+    width: 450px;
+    margin: auto;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    grid-gap: 5px;
+    grid-template-areas: 
+        'box1 box2 box3'
+        'box4 box5 box6'
+        'box7 box8 box9';
+}
+
+.box
+{
+  border: 1px solid white;
+  background-color: #61429d;
+  text-align: center;
+  line-height: 150px;
+  height: 150px;
+  width: 150px;
+  font-size: 50px;
+}
+
+h1
+{
+  text-align: center;
+}
+p
+{
+  text-align: center;
+  font-size: 16px;
+}
+
